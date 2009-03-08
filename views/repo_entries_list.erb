@@ -1,0 +1,5 @@
+<% @entries.each do |entry| %>
+<li><a href="#r<%= entry.revision.to_s %>"><%= entry.revision.to_s %> : <%= entry.author %></a></li>
+<% end %>
+<li><a href="/<%= @repo.id.to_s %>/<%= (@entries.last.revision - 1).to_s %>" target="_replace">Load <%= @batch_size %> more...</a></li>
+

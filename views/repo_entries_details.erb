@@ -1,0 +1,14 @@
+<% @entries.each do |entry| %>
+<ul id="r<%= entry.revision.to_s %>" title="r<%= entry.revision.to_s %>">
+  <li><%= entry.date.strftime('%d/%m/%Y %H:%M:%S') %></li>
+  <li><%= entry.author %></li>
+  <li><%= entry.message %></li>
+  <li class="group">Files</li>
+  <% entry.files.each do |file| %>
+  <li><%= file.action %> <%= file.path %></li>
+  <% end %>
+</ul>
+<% end %>
+
+<!-- extraReplacement -->
+

@@ -1,0 +1,6 @@
+<ul id="home" title="SVN Repositories" selected="true">
+  <% @repositories.each do |repo| %>
+  <li><a href="/<%= repo.id.to_s %>" target="_self"><%= repo.name %></a></li>
+  <% end %>
+</ul>
+

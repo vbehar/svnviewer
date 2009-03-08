@@ -1,0 +1,10 @@
+
+SVN Viewer
+
+Simple SVN Log Viewer built in Ruby with Sinatra, targeted at mobile phones (use iUI).
+
+Configure some SVN repositories URL in svnviewer.rb, and run it.
+Then visit http://localhost:4567/
+
+!! Work in progress !!
+
