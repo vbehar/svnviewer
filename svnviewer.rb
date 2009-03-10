@@ -3,7 +3,7 @@
 require 'rubygems'
 require 'sinatra'
 
-require 'svn.rb'
+require File.expand_path(File.dirname(__FILE__) + "/svn")
 
 configure do
   set :svn_repositories, [SVN::Repository.new(1, "repo 1", "http://www.example.com/repo1"), 
